@@ -1,17 +1,19 @@
 <!-- Navbar.svelte -->
 <script lang="ts">
-	import Button from "$lib/components/ui/button/button.svelte";
-  import { Search } from 'lucide-svelte';
+  import Button from "$lib/components/ui/button/button.svelte";
+  import { Search } from "lucide-svelte";
 
-  let className="";
+  let className = "";
 
-  export {className as class}
+  export { className as class };
 </script>
 
-
-
-<nav class="top-0 left-0 px-8 py-2 flex items-center justify-between">
-  <img class="w-8 h-8 mr-4" src="favicon.png" alt="College Logo" />
+<nav class="px-8 py-2 flex items-center justify-between shadow-lg">
+  <img
+    class="w-auto h-12 mr-4"
+    src="https://fragnel.edu.in/images/crce/logos/crcelogo.jpg"
+    alt="College Logo"
+  />
 
   <ul class="flex items-center space-x-8">
     <li><a href="/">Home</a></li>
@@ -21,7 +23,9 @@
   </ul>
 
   <ul class="flex items-center space-x-6">
-    <Search size="24" class="text-primary-background" />
+    <a href="/a-z/">
+      <Search size="24" class="text-primary-background"  />
+    </a>
     <Button variant="default"><a href="/contact-us">Contact Us</a></Button>
   </ul>
 </nav>
