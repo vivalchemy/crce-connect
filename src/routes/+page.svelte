@@ -1,16 +1,15 @@
 <!-- Navbar.svelte -->
 <script lang="ts">
   import HeroSection from "$lib/components/block/HeroSection.svelte";
-    import Navbar from "$lib/components/block/Navbar.svelte";
-    import Test from "$lib/components/block/Test.svelte";
-    import CardList from "$lib/components/block/CardList.svelte";
+  import Navbar from "$lib/components/block/Navbar.svelte";
+  import Testimonial from "$lib/components/block/Testimonial.svelte";
+  import CardList from "$lib/components/block/CardList.svelte";
 </script>
-
 
 <div>
   <!-- Header Image -->
   <div
-    class="bg-cover bg-center h-[calc(100vh-64px)] bg-[url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+    class="bg-cover bg-center h-[calc(100vh-64px)] bg-[url('/2-page-1-crce-building.webp')]"
   >
     <div
       class="absolute inset-0 flex flex-col justify-center items-center text-white"
@@ -35,10 +34,49 @@
   buttonText="Read more"
   subheading="The Institute started with only one programme in Production Engineering in 1984 with an intake capacity of 60 students. In 1987, the programme in Electronics Engineering was started with an intake capacity of 60 students followed by Computer Engineering in 1991 with an intake capacity of 60 students. In 2001, the programme in Information Technology was started with an intake capacity of 30 students which was later increased to 60 in 2010. The College started offering Master’s ... "
 />
-
-<CardList sectionTitle="Notice Board"/>
-
+<div class="mb-20 px-16 flex justify-end">
+  <CardList sectionTitle="Notice Board" />
+</div>
+<div class="flex justify-center">
+  <hr class="w-3/4 border-2" />
+</div>
 <!-- <div class="mb-16">hi</div> -->
+<div class="flex font-bold justify-center text-4xl pt-12 pb-16">
+  Testimonial
+</div>
 
+<div class="sm:overflow-auto flex gap-4 justify-center">
+  <!-- Horizontal Scrollable List -->
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
+    <Testimonial />
+  </div>
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
+    <Testimonial />
+  </div>
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
+    <Testimonial />
+  </div>
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
+    <Testimonial />
+  </div>
+</div>
 
-<Test/>
+<!-- 
+Horizontal Scrollable List on Mobile Screens
+<div class="md:hidden overflow-x-auto flex flex-row">
+  <div class="flex-shrink-0 w-60">
+    <Testimonial />
+  </div>
+  <div class="flex-shrink-0 w-60">
+    <Testimonial />
+  </div>
+  <div class="flex-shrink-0 w-60">
+    <Testimonial />
+  </div>
+  <div class="flex-shrink-0 w-60">
+    <Testimonial />
+  </div>
+</div> 
+-->
+
+<!-- <Test/> -->
