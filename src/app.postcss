@@ -23,7 +23,7 @@
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 142.1 76.2% 36.3%;
-    --radius: 1rem;
+    --radius: 0.5rem;
   }
   .dark {
     --background: 20 14.3% 4.1%;
@@ -49,10 +49,32 @@
 }
 
 @layer base {
-	* {
-		@apply border-border;
-	}
-	body {
-		@apply bg-background text-foreground;
-	}
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
