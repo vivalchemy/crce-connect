@@ -4,8 +4,12 @@
   import Navbar from "$lib/components/block/Navbar.svelte";
   import Testimonial from "$lib/components/block/Testimonial.svelte";
   import CardList from "$lib/components/block/CardList.svelte";
-    import Carousel from "$lib/components/block/Carousel.svelte";
+  import Carousel from "$lib/components/block/Carousel.svelte";
+  import { fetchHallOfFameImages } from "$lib/components/firebase/hall_of_fame_images";
+  // fetchHallOfFameImages();
+
 </script>
+
 
 <div>
   <div class="bg-foreground text-background">
