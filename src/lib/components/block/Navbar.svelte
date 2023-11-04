@@ -10,7 +10,7 @@
 </script>
 
 <nav
-  class="absolute backdrop-blur {url == "/" ? "text-background" : "text-foreground"} w-full px-8 py-2 flex items-center justify-between shadow-lg"
+  class="backdrop-blur {url == "/" ? "text-background absolute" : "text-foreground"} w-full px-8 py-2 flex items-center justify-between shadow-lg"
 >
   <img
     class="w-auto h-12 mr-4"
@@ -19,7 +19,7 @@
   />
 
   <ul class="flex items-center space-x-8">
-    <li><a href="https://crce-connect.vercel.app">Home</a></li>
+    <li><a href="/">Home</a></li>
     <li><a href="/about">About</a></li>
     <li><a href="/academics">Academics</a></li>
     <li><a href="/admissions"> Admissions</a></li>

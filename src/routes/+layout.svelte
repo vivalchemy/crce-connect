@@ -3,7 +3,7 @@
   import Navbar from "$lib/components/block/Navbar.svelte";
   import Footer from "$lib/components/block/Footer.svelte";
   import { ExternalLink } from "lucide-svelte";
-  import { fetchMainEvent } from "$lib/components/firebase/main_event";
+  import { fetchMainEvent } from "$lib/firebase/main_event";
   let hasMainEvent = true;
   // fetchMainEvent();
 </script>

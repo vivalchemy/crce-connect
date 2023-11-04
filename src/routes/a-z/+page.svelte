@@ -4,7 +4,7 @@
   import { Input } from "$lib/components/ui/input";
   import { X } from "lucide-svelte";
   import { pages } from "$lib/js/PageList.js";
-  import NavbarSpacer from "$lib/components/block/NavbarSpacer.svelte";
+  // import NavbarSpacer from "$lib/components/block/NavbarSpacer.svelte";
 
   let alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let starts = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -14,19 +14,19 @@
    */
   function searchInput(e) {
     value = e.target.value.toLowerCase();
-    if(starts!== "ABCDEFGHIJKLMNOPQRSTUVWXYZ"){
+    if (starts !== "ABCDEFGHIJKLMNOPQRSTUVWXYZ") {
       starts = "ABCDEFGHIJKLMNOPQRSTU";
     }
     // console.log(value);
   }
 
-  function resetSearch(){
+  function resetSearch() {
     starts = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    value = ""; 
+    value = "";
   }
 </script>
 
-  <NavbarSpacer/>
+<!-- <NavbarSpacer /> -->
 
 <div class="flex flex-wrap my-4">
   {#each alphabets as alphabet}
@@ -44,7 +44,9 @@
 
 <form class="mx-16 flex items-center space-x-2">
   <Input type="text" placeholder="Search" on:input={searchInput} />
-  <Button type="submit" on:click={resetSearch} title="resets the search"><X /></Button>
+  <Button type="submit" on:click={resetSearch} title="resets the search"
+    ><X /></Button
+  >
 </form>
 
 <div class="min-h-screen">

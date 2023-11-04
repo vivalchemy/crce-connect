@@ -5,11 +5,17 @@
   import Testimonial from "$lib/components/block/Testimonial.svelte";
   import CardList from "$lib/components/block/CardList.svelte";
   import Carousel from "$lib/components/block/Carousel.svelte";
-  import { fetchHallOfFameImages } from "$lib/components/firebase/hall_of_fame_images";
+  import {
+    fetchHallOfFameImages,
+    addHallOfFameImages,
+    deleteHallOfFameImages,
+  } from "$lib/firebase/hall_of_fame_images";
+  // console.log("adding the data")
+  // addHallOfFameImages("this is src", "this is title", "this is alt")
+  // console.log("added the data")
+  // deleteHallOfFameImages("");include the document id that is in the firestore
   // fetchHallOfFameImages();
-
 </script>
-
 
 <div>
   <div class="bg-foreground text-background">
