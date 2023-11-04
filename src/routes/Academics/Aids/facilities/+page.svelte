@@ -38,5 +38,6 @@
     </p>
     <p>
       <strong>Database Lab (810)</strong> has 24 desktop systems (HP). This laboratory is established in the year 2016. The Systems in the laboratory consist of software such as Netbeans, Octave, Postgresql, NS-2, Spice, TexStudio, Weka, Visual Studio (Express Edition), Python, Java.
-      <br><br>
+      <br>
       Hardware Available: HP202 G1 MT Business PC, Core i3, 4GB
+    </p>
