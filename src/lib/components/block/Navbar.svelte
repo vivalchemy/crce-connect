@@ -29,6 +29,6 @@
     <a href="/a-z/">
       <Search size="24" class="text-primary-background" />
     </a>
-    <Button variant="default"><a href="/admin/dashboard">Contact Us</a></Button>
+    <Button variant="default"><a href="/dummy">Contact Us</a></Button>
   </ul>
 </nav>
